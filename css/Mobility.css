@@ -174,15 +174,23 @@ h4{
     height: 80%;
     margin-bottom: -10px;
     padding: 10px;
-    width: 80%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .main h1 {
     width: 85%;
-    grid-column: span 7;
+    grid-column: span 8;
     grid-row: 1;
     margin-left: 20px;
     margin-top: -50px;
+}
+
+.main p {
+    grid-row: 2;
+    grid-column: span 9;
+    text-align: justify;
 }
 
 .vince {
@@ -198,17 +206,18 @@ h4{
     margin-left: 20px;
 }
 
-.mentzer {
+.kelly {
     grid-row: 3;
+    grid-column: span 8;
     width: 90%;
     margin-bottom: 30px;
     border-bottom: #003049 3px solid;
     padding: 30px;
 }
 
-.mentzer p {
+.kelly p {
     text-align: justify;
-    margin-left: 20px;
+    grid-column: span 9;
 }
 
 .john {
@@ -226,10 +235,10 @@ h4{
 }
 
 .profile{
-    max-height: 300px;
-    max-width: 300px;
+    max-height: 400px;
+    max-width: 400px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .book {
@@ -303,6 +312,7 @@ h4{
     margin-left: 10px;
 }
 
+
 /* Styles for the hamburger menu icon */
 
 nav li {
@@ -351,17 +361,33 @@ ul.active {
 /* weired 629px breakpoint */
 @media screen and (min-width: 589px){
     
+    body {
+        background-color: pink;
+    }
+
+    .main {
+        width: 90vw;
+    }
+
+    .mob-info {
+        grid-column: span 13;
+    }
 
     .grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         box-sizing: border-box;
-        width: 100%;
+        width: 100w;
         max-width: 1060px;
     }
 
     h1 {
         grid-column: 4/7;
+    }
+
+    .kelly {
+        grid-column: span 13;
+        
     }
 
 
@@ -386,23 +412,25 @@ ul.active {
 
 
 
-    .vince-books {
+    .kelly-books {
         grid-row: 3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        gap: 8px;
         margin-top: 20px;
-        
+        margin-left: -5px;
     }
 
-    .vince-books h3 {
-        grid-column: span 3;
+    .kelly-books h3 {
+        grid-column: span 11;
         color: red;
+        margin-left: -55px;
     }
 
     .book {
         height: 160px;
         margin-bottom: 10px;
+       
     }
 
     .desc {
@@ -421,7 +449,32 @@ ul.active {
 /* Small Tablet Styles */
 @media screen and (min-width: 860px) {
     body{
-        font-size: 18px;
+        font-size: 16px;
+        background-color: aqua;
+    }
+
+    .kelly {
+        grid-column: span 13;
+        
+    }
+
+    .kelly-books {
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4%;
+        margin-top: 20px;
+        margin-left: 5%;
+    }
+
+    .kelly-books h3 {
+        grid-column: span 11;
+        color: red;
+        margin-right: 250px;
+    }
+
+    .book{
+        height: 230px;
     }
 
     #menu-toggle {
@@ -479,7 +532,7 @@ ul.active {
     }
 
     .main{
-        margin-left: 10px;
+        
         margin-top: 150px;
         width: 90vw;
     }
@@ -487,7 +540,7 @@ ul.active {
     footer{
         height: 50px;
         padding: 5px;
-        margin-top: 20px;
+        margin-top: 200px;
     }
 
     footer p {
@@ -566,7 +619,28 @@ ul.active {
 /* Large Tablet and laptops Styles */
 @media screen and (min-width: 960px) {
     body{
-        font-size: 19px;
+        font-size: 15px;
+        background-color: peachpuff;
+    }
+
+    .kelly-books {
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 8px;
+        margin-top: 20px;
+        margin-left: 3%;
+    }
+
+    .kelly-books h3 {
+        grid-column: span 13;
+        color: red;
+        margin-right: 170px;
+        
+    }
+
+    .book{
+        height: 250px;
     }
 
     .grid{
@@ -655,7 +729,7 @@ ul.active {
     footer{
         height: 50px;
         padding: 5px;
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
     footer p {
@@ -667,7 +741,32 @@ ul.active {
 /* desktop Styles */
 @media screen and (min-width: 1200px) {
     body{
-      font-size: 21px;  
+      font-size: 17px;  
+    }
+
+    .main{
+        margin: 0 5vw;
+  
+    }
+
+    .kelly-books {
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-top: 20px;
+        margin-left: 10%;
+    }
+
+    .kelly-books h3 {
+        grid-column: span 13;
+        color: red;
+        margin-right: 260px;
+        
+    }
+
+    .book{
+        height: 250px;
     }
     
      #menu-toggle {
@@ -726,7 +825,7 @@ ul.active {
 
     .main{
         margin-top: 100px;
-        margin-left: 30px;
+        margin-left: 150px;
     }
 
     footer{
