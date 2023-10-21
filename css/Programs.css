@@ -21,6 +21,7 @@ li{
 
 body {
     overflow-x: hidden;
+    background-color: whitesmoke;
 }
 
 .button {
@@ -110,14 +111,7 @@ h4{
 }
 
 /* Default background styles */
- body {
-    background-image: url('../images/karsten-winegeart-5sGYotxAuUA-unsplash.jpg');
-    background-size: cover; 
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100vw;
-    height: 100vh;
-  } 
+
 
 
 /* Blinking text for banner text */
@@ -150,6 +144,7 @@ h4{
 .blinking-text {
     font-weight: bolder;
     animation: blink 4s infinite alternate;
+    margin-bottom: 40px;
 }
 
 @keyframes blink {
@@ -175,26 +170,86 @@ h4{
 /* Mobile Styles */
 
 .main {
+    text-align: center;
     height: 80%;
-    margin-bottom: -90px;
+    margin-bottom: -10px;
+    padding: 10px;
+    width: 80%;
 }
 
 .main h1 {
-    color: yellow;
-    width: 70%;
+    width: 85%;
     grid-column: span 7;
     grid-row: 1;
     margin-left: 20px;
     margin-top: -50px;
 }
 
-.main h3 {
+.vince {
     grid-row: 2;
+    width: 90%;
+    margin-bottom: 30px;
+    border-bottom: #003049 3px solid;
+    padding: 30px;
+}
+
+.vince p {
+    text-align: justify;
     margin-left: 20px;
-    grid-column: span 5;
-    color: red;
-    margin-top: -230px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mentzer {
+    grid-row: 3;
+    width: 90%;
+    margin-bottom: 30px;
+    border-bottom: #003049 3px solid;
+    padding: 30px;
+}
+
+.mentzer p {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.john {
+    grid-row: 4/7;
+    width: 90%;
+    margin-bottom: 30px;
+    border-bottom: #003049 3px solid;
+    padding: 30px;
+    
+}
+
+.john p {
+    text-align: justify;
+    margin-left: 20px;
+}
+
+.profile{
+    max-height: 300px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+.book {
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.vbook1{
+    margin-bottom: 10px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.vbook1 p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.main h3 {
+    margin-left: 0px;
 }
 
 .grid {
@@ -293,6 +348,76 @@ ul.active {
         font-size: medium;
     }
 
+/* weired 629px breakpoint */
+@media screen and (min-width: 589px){
+    
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1060px;
+    }
+
+    h1 {
+        grid-column: 4/7;
+    }
+
+
+    .vince .blinking-text {
+        text-align: center;
+        width: 90%;
+        grid-column: span 10;
+        grid-row: 1;
+    }
+
+    .vince-pic {
+        display: grid;
+        grid-row: 2;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        gap: 5px;
+    }
+
+    .profile {
+        height: 1000px;
+    }
+
+
+
+    .vince-books {
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        margin-top: 20px;
+        
+    }
+
+    .vince-books h3 {
+        grid-column: span 3;
+        color: red;
+    }
+
+    .book {
+        height: 220px;
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        border-right: #003049 solid 3px;
+        border-bottom: #003049 solid 3px;
+        margin-left: -10px;
+        padding: 15px;
+    }
+
+    .vbook1 {
+        border:  3px solid #003049;
+        padding: 15px;
+    }
+}
+
 /* Small Tablet Styles */
 @media screen and (min-width: 860px) {
     body{
@@ -354,8 +479,9 @@ ul.active {
     }
 
     .main{
-        margin-left: 30px;
+        margin-left: 10px;
         margin-top: 150px;
+        width: 90vw;
     }
 
     footer{
@@ -368,12 +494,79 @@ ul.active {
         margin-top: 20px;
         font-size: medium;
     }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 1060px;
+    }
+
+    h1 {
+        grid-column: 4/7;
+        width: 90%;
+    }
+
+    .main {
+        width: 90vw;
+    }
+
+
+    .vince .blinking-text {
+        text-align: center;
+        width: 90%;
+        grid-column: span 10;
+        grid-row: 1;
+    }
+
+    .vince-pic {
+        display: grid;
+        grid-row: 2;
+        grid-template-columns: repeat(2, 1fr);
+        width: 90vw;
+        gap: 2px;
+    }
+
+    .profile {
+        max-height: 400px;
+        max-width: 500px;
+    }
+
+
+
+    .vince-books {
+        grid-row: 3;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .vbook1 {
+        border:  3px solid #003049;
+        padding: 15px;
+    }
+
+    .vince-books h3 {
+        grid-column: span 3;
+        color: red;
+    }
+
+    .desc {
+        border-right: #003049 solid 3px;
+        border-bottom: #003049 solid 3px;
+        margin-left: -10px;
+        padding: 15px;
+    }
+
 }
 
 /* Large Tablet and laptops Styles */
 @media screen and (min-width: 960px) {
     body{
-        font-size: 20px;
+        font-size: 19px;
     }
 
     .grid{
@@ -383,8 +576,8 @@ ul.active {
     }
 
     .main h1 {
-        color: yellow;
-        width: 70%;
+        
+        width: 90%;
         grid-column: span 7;
         grid-row: 1;
         margin-left: 20px;
@@ -392,11 +585,10 @@ ul.active {
     }
     
     .main h3 {
-        grid-row: 2;
+
         margin-left: 20px;
-        grid-column: span 5;
+    
         color: red;
-        margin-top: -130px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
 
@@ -457,6 +649,7 @@ ul.active {
     .main{
         margin-top: 80px;
         margin-left: 30px;
+        width: 90vw;
     }
 
     footer{
@@ -474,7 +667,7 @@ ul.active {
 /* desktop Styles */
 @media screen and (min-width: 1200px) {
     body{
-      font-size: 24px;  
+      font-size: 21px;  
     }
     
      #menu-toggle {
