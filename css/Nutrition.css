@@ -174,125 +174,65 @@ h4{
     height: 80%;
     margin-bottom: -10px;
     padding: 10px;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 80%;
+    
+}
+
+body {
+    background-color: red;
 }
 
 .main h1 {
     width: 85%;
-    grid-column: span 8;
+    grid-column: span 9;
     grid-row: 1;
     margin-left: 20px;
     margin-top: -50px;
 }
 
-.main p {
-    grid-row: 2;
+.starter {
     grid-column: span 9;
+    width: 90vw;
+}
+
+.starter p {
     text-align: justify;
 }
 
-.vince {
-    grid-row: 2;
-    width: 90%;
-    margin-bottom: 30px;
-    border-bottom: #003049 3px solid;
-    padding: 30px;
-}
-
-.vince p {
-    text-align: justify;
-    margin-left: 20px;
-}
-
-.kelly {
-    grid-row: 3;
-    grid-column: span 11;
-    width: 90%;
-    margin-bottom: 30px;
-    border-bottom: #003049 3px solid;
-    padding: 30px;
-}
-
-
-.mob-info {
-    grid-column: span 13;
-    grid-template-columns: repeat(9, 1fr);
-    grid-row-gap: 20px;
-    
-}
-
-.mob-info h1 {
-    grid-column: span 10;
-    grid-row: 1;
-}
-
-.mob-info .profile {
-    grid-column: span 10;
-    grid-row: 3;
-}
-
-.mob {
-    text-align: justify;
-    grid-column: span 10;
-    grid-row: 2;
-}
-
-.kelly-info h2 {
-    grid-column: span 13;
-}
-
-.kelly-info {
-    grid-column: span 13;
-    grid-template-columns: repeat(9, 1fr);
-}
-
-.kelly-info .profile {
-    grid-column: span 10;
-    grid-row: 2;
-}
-
-.kelly p {
-    text-align: justify;
+.nut-info {
     grid-column: span 9;
-    grid-row: 3;
+    margin-top: 100px;
+    width: 90vw;
 }
 
-.john {
-    grid-row: 4/7;
-    width: 90%;
-    margin-bottom: 30px;
-    border-bottom: #003049 3px solid;
-    padding: 30px;
-    
-}
-
-.john p {
+.nut-info p {
     text-align: justify;
-    margin-left: 20px;
 }
 
 .profile{
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 300px;
+    max-width: 300px;
     margin-bottom: 20px;
-    margin-left: 5px;
+    margin-left: 20px;
+}
+
+.vince-books {
+    width: 90vw;
 }
 
 .book {
-    height: 200px;
+    height: 250px;
     margin-bottom: 10px;
 }
 
 .vbook1{
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 30px;
     text-align: center;
 }
 
 .vbook1 p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: justify;
 }
 
@@ -351,7 +291,6 @@ h4{
     margin-left: 10px;
 }
 
-
 /* Styles for the hamburger menu icon */
 
 nav li {
@@ -401,75 +340,25 @@ ul.active {
 @media screen and (min-width: 589px){
     
     body {
-        background-color: lime;
+        background-color: pink;
     }
 
     .main {
         width: 90vw;
-    }
-
-    .mob-info {
-        margin-right: 0px;
-        grid-column: span 13;
-        gap: 10px;
-        
-    }
-
-    
-
-
-    .mob-info h1 {
-        grid-column: span 13;
-    }
-
-    .mob-info .profile {
-        grid-column: span 5;
-        grid-row: 2;
-        height: 235px;
+        margin-left: 10px;
     }
 
     .grid {
         display: grid;
         grid-template-columns: repeat(12, 1fr);
         box-sizing: border-box;
-        width: 100w;
+        width: 100%;
         max-width: 1060px;
     }
 
     h1 {
         grid-column: 4/7;
     }
-
-
-    
-    .kelly {
-        grid-column: span 13;
-    }
-
-    .kelly-info {
-        grid-column: span 14;
-        gap: 10px;
-        margin-right: 0px;
-        grid-template-columns: repeat(10, 1fr);
-    }
-
-     .kelly-info h2 {
-        grid-row: 1;
-        grid-column: span 15;
-    }
-
-    .kelly-info .profile {
-        grid-column: span 4;
-        grid-row: 2;
-        height: 280px;
-        margin-left: -20px;
-    }
-
-    .kelly-info p {
-        grid-column: 6/14;
-        grid-row: 2;
-    } 
-    
 
 
     .vince .blinking-text {
@@ -493,25 +382,23 @@ ul.active {
 
 
 
-    .kelly-books {
+    .vince-books {
         grid-row: 3;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 8px;
+        gap: 10px;
         margin-top: 20px;
-        margin-left: -5px;
+        
     }
 
-    .kelly-books h3 {
-        grid-column: span 11;
+    .vince-books h3 {
+        grid-column: span 3;
         color: red;
-        margin-left: -55px;
     }
 
     .book {
         height: 160px;
         margin-bottom: 10px;
-       
     }
 
     .desc {
@@ -530,47 +417,65 @@ ul.active {
 /* Small Tablet Styles */
 @media screen and (min-width: 860px) {
     body{
-        font-size: 16px;
-        background-color: aqua;
+        font-size: 18px;
+        background-color: beige;
     }
 
-    .kelly {
-        grid-column: span 13;
-        
-    }
 
-     /* .mob-info {
-       
-        grid-column: span 13;
-    }
+.starter {
+    grid-column: span 9;
+    width: 90vw;
+}
 
-    .mob-info h1 {
-        grid-column: span 13;
-    }
+.starter p {
+    text-align: justify;
+}
 
-    .mob-info .profile {
-        grid-column: span 2;
-        grid-row: 2;
-    } */
+.nut-bd {
+    display: grid;
+    margin-bottom: 60px;
+    grid-template-columns: repeat(10, 1fr);
+}
 
-    .kelly-books {
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 4%;
-        margin-top: 20px;
-        
-    }
+.nut-bd .profile {
+    grid-column: 1/6;
+}
 
-    .kelly-books h3 {
-        grid-column: span 11;
-        color: red;
-        margin-right: 250px;
-    }
+.nut-desc {
+    margin-top: -25px;
+    grid-column: 6/12;
+}
 
-    .book{
-        height: 230px;
-    }
+/* .nut-desc p {
+    width: 300px;
+} */
+
+
+.nut-info {
+    display: block;
+    grid-column: span 10;
+    margin-top: 100px;
+    width: 90vw;
+}
+
+.nut-info h1 {
+    grid-column: span 10;
+    margin-bottom: 100px;
+}
+
+/* .nut-info p {
+    text-align: justify;
+    grid-column: span 7;
+   
+} */
+
+.profile{
+    grid: span 7;
+    max-height: 300px;
+    max-width: 300px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
 
     #menu-toggle {
         display: none;
@@ -627,7 +532,7 @@ ul.active {
     }
 
     .main{
-        
+        margin-left: 10px;
         margin-top: 150px;
         width: 90vw;
     }
@@ -635,7 +540,7 @@ ul.active {
     footer{
         height: 50px;
         padding: 5px;
-        margin-top: 200px;
+        margin-top: 20px;
     }
 
     footer p {
@@ -677,8 +582,8 @@ ul.active {
     }
 
     .profile {
-        height: 300px;
-        width: 300px;
+        max-height: 400px;
+        max-width: 500px;
     }
 
 
@@ -714,46 +619,8 @@ ul.active {
 /* Large Tablet and laptops Styles */
 @media screen and (min-width: 960px) {
     body{
-        font-size: 15px;
-        background-color: burlywood;
-    }
-
-    .mob-info h1 {
-        grid-column: 4/9;
-    }
-
-    .mob {
-        margin-left: 50px;
-    }
-
-
-    .profile {
-        height: 350px;
-        width: 350px;
-    }
-
-    .kelly-books {
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-        margin-top: 20px;
-        margin-right: -170px;
-    }
-
-    .kelly-books h3 {
-        grid-column: span 13;
-        color: red;
-        margin-right: 170px;
-        
-    }
-
-    .kelly-info p {
-        grid-column: 7/19;
-    }
-
-    .book{
-        height: 250px;
+        font-size: 19px;
+        background-color: aquamarine;
     }
 
     .grid{
@@ -765,7 +632,7 @@ ul.active {
     .main h1 {
         
         width: 90%;
-        grid-column: 3/13;
+        grid-column: span 7;
         grid-row: 1;
         margin-left: 20px;
         margin-top: 10px;
@@ -842,7 +709,7 @@ ul.active {
     footer{
         height: 50px;
         padding: 5px;
-        margin-top: 10px;
+        margin-top: 100px;
     }
 
     footer p {
@@ -854,67 +721,8 @@ ul.active {
 /* desktop Styles */
 @media screen and (min-width: 1200px) {
     body{
-      font-size: 17px;  
-      background-color: azure;
-    }
-
-    .kelly {
-        grid-column: 1/13;
-    }
-
-    .profile {
-        height: 400px;
-        width: 400px;
-    }
-
-    .kelly-info p {
-        width: 700px;
-        margin-left: -70px;
-    }
-
-    .mob {
-        width: 690px;
-        margin-left: 10px;
-    }
-
-    .mob-info {
-        grid-column:1/15 ;
-        margin-left: -120px;
-    }
-
-    .kelly-info {
-        grid-column:1/15 ;
-        margin-left: -100px;
-    }
-
-    /* .kelly-info p {
-        grid-column: 7/19;
-        width: 600px;
-    } */
-
-    .main{
-        grid-column: 1/19;
-  
-    }
-
-    .kelly-books {
-        grid-row: 3;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 14px;
-        margin-top: 20px;
-        margin-left: -80px;
-    }
-
-    .kelly-books h3 {
-        grid-column: span 13;
-        color: red;
-        margin-right: 260px;
-        
-    }
-
-    .book{
-        height: 300px;
+      font-size: 21px; 
+      background-color: blanchedalmond; 
     }
     
      #menu-toggle {
@@ -973,7 +781,7 @@ ul.active {
 
     .main{
         margin-top: 100px;
-        margin-left: 150px;
+        margin-left: 30px;
     }
 
     footer{
@@ -988,33 +796,4 @@ ul.active {
     }
 }
 
-@media screen and (min-width: 1280px) {
 
-    body {
-        background-color: #222;
-    }
-    .profile {
-        height: 400px;
-        width: 400px;
-    }
-
-    .kelly-info p {
-        width: 700px;
-        margin-left: -10px;
-    }
-
-    .mob {
-        width: 690px;
-        margin-left: 10px;
-    }
-
-    .mob-info {
-        grid-column:1/15 ;
-        margin-left: -70px;
-    }
-
-    .kelly-info {
-        grid-column:1/15 ;
-        margin-left: -100px;
-    }
-}
