@@ -220,6 +220,10 @@ body {
     text-align: justify;
 }
 
+.nut-arnie {
+    width: 50vw;
+} 
+
 .nut-info {
     grid-column: span 9;
     margin-top: 100px;
@@ -654,6 +658,10 @@ ul.active {
 
     }
 
+    .nut-arnie {
+        width: 35vw;
+    } 
+
     .grid{
         width: 100%;
         max-width: 1060px;
@@ -768,7 +776,7 @@ ul.active {
         z-index: 1;
         margin-top: 8px;
         padding: 1px;
-        margin-right: 20px;
+        
     }
     
     .site-nav ul li{
