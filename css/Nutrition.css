@@ -179,7 +179,7 @@ h4{
 }
 
 body {
-    background-color: red;
+    background-color: whitesmoke;
 }
 
 .main h1 {
@@ -340,7 +340,7 @@ ul.active {
 @media screen and (min-width: 589px){
     
     body {
-        background-color: pink;
+        background-color: whitesmoke;
     }
 
     .main {
@@ -418,7 +418,7 @@ ul.active {
 @media screen and (min-width: 860px) {
     body{
         font-size: 18px;
-        background-color: beige;
+        background-color: whitesmoke;
     }
 
 
@@ -620,7 +620,7 @@ ul.active {
 @media screen and (min-width: 960px) {
     body{
         font-size: 19px;
-        background-color: aquamarine;
+
     }
 
     .grid{
@@ -722,7 +722,7 @@ ul.active {
 @media screen and (min-width: 1200px) {
     body{
       font-size: 21px; 
-      background-color: blanchedalmond; 
+       
     }
     
      #menu-toggle {

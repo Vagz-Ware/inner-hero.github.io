@@ -400,9 +400,6 @@ ul.active {
 /* weired 629px breakpoint */
 @media screen and (min-width: 589px){
     
-    body {
-        background-color: lime;
-    }
 
     .main {
         width: 90vw;
@@ -531,7 +528,6 @@ ul.active {
 @media screen and (min-width: 860px) {
     body{
         font-size: 16px;
-        background-color: aqua;
     }
 
     .kelly {
@@ -715,7 +711,7 @@ ul.active {
 @media screen and (min-width: 960px) {
     body{
         font-size: 15px;
-        background-color: burlywood;
+        
     }
 
     .mob-info h1 {
@@ -855,7 +851,7 @@ ul.active {
 @media screen and (min-width: 1200px) {
     body{
       font-size: 17px;  
-      background-color: azure;
+    
     }
 
     .kelly {
@@ -990,9 +986,7 @@ ul.active {
 
 @media screen and (min-width: 1280px) {
 
-    body {
-        background-color: #222;
-    }
+    
     .profile {
         height: 400px;
         width: 400px;
