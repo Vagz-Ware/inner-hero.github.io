@@ -4,8 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
+    <link rel="stylesheet" href="css/Contact.css">
+    <script src="Contact.js" defer></script>
 </head>
 <body>
+
+    <section class="nav">
+        <nav class="site-nav grid" >
+            <h4 class="blinking-text2">Unleashed</h4>
+            <div id="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <ul id="navbar">
+                <li style="background-color: #03a4fa;"><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="Programs.html">Programs</a>
+                    
+                </li>
+                <li><a href="Mobility.html">Mobility</a></li>
+                <li><a href="Nutrition.html">Nutrition</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </section>
+
+    <section class="main grid">
+        <div class="contact-container">
+            <h1 style="text-align: center;">Get In Touch With Us!</h1>
+            <form action="your_server_script.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for = "email">Email:</label>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <div class="button-container">
+                    <input type="submit" value="Submit"></div>
+            </form>
+        </div>
+        
+    </section>
+
+    <section class="footer">
+        <footer>
+            <p>Inner-Hero copyright 2023</p>
+        </footer>
+    </section>
     
 </body>
 </html>

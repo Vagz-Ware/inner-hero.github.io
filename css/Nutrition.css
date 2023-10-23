@@ -325,6 +325,10 @@ ul.active {
     margin: 4px 0;
 }
 
+.nut-bd {
+    margin-bottom: 80px;
+}
+
     footer{
         height: 50px;
         padding: 5px;
@@ -394,6 +398,12 @@ ul.active {
     .vince-books h3 {
         grid-column: span 3;
         color: red;
+    }
+
+    .nut-bd {
+        border-right: #003049 solid 3px;
+        border-bottom: #003049 solid 3px;
+        padding: 15px;
     }
 
     .book {
