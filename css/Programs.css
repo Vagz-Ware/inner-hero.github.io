@@ -24,19 +24,39 @@ body {
     background-color: whitesmoke;
 }
 
-.button {
-    background: none;
-    border: 2px solid red;
-    color: red;
-    padding: 6px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0, 0.6);
+.amazon a {
+    color: white;
 }
 
-.button:hover{
+.amazon {
+    background: none;
+    border: 2px solid red;
+    color: black;
+    padding: 6px 8px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    /* box-shadow: 1px 2px 3px rgba(0, 0, 0, 0, 0.6); */
+    animation: blinky 2s infinite alternate;
+}
+
+@keyframes blinky {
+    0% {
+        background: none;
+        border: 2px solid red;
+        color: red;
+    }
+    100% {
+        background: red;
+        border: 2px solid #222;
+        color: #222;
+    }
+}
+
+
+.amazon:hover{
     color: #222;
     background: red;
+    padding: 10px;
 }
 
 input, textarea{
@@ -96,6 +116,7 @@ h1 {
 
 h3{
     font-size: 1.3;
+    color: #003049;
 }
 
 h2{
@@ -106,8 +127,8 @@ h4{
     font-size: 1.1em;
 }
 
-.leading{
-    font-size: 1.1em;
+p{
+    font-size: 0.9em;
 }
 
 /* Default background styles */
@@ -397,7 +418,7 @@ ul.active {
 
     .vince-books h3 {
         grid-column: span 3;
-        color: red;
+        
     }
 
     .book {
@@ -551,7 +572,7 @@ ul.active {
 
     .vince-books h3 {
         grid-column: span 3;
-        color: red;
+        
     }
 
     .desc {
@@ -588,8 +609,7 @@ ul.active {
 
         margin-left: 20px;
     
-        color: red;
-        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
     }
 
     #menu-toggle {
